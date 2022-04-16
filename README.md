@@ -1,3 +1,3 @@
 # Portfolio Website
 
-This project is our Portfolio Website [Pawan Kotak](https://pawankotak.netlify.app/).
+This project is my Portfolio Website [Pawan Kotak](https://pawankotak.netlify.app/).
