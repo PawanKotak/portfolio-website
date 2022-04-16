@@ -1,38 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
+:root {
+  --base-color: #f7e7ce;
+  --second-color: #ffe4c4;
+  --khakhi-color: #c3b091;
+  font-family: "Cardo", serif;
+}
+
 .App {
+  height: 100vh;
+  background-color: var(--base-color);
+  padding: 5% 10%;
+  box-sizing: border-box;
+  background-size: cover !important;
+  color: var(--base-color);
+}
+
+section {
+  font-size: 40px;
+}
+section .subtitle {
+  font-size: 15px;
+}
+
+.social-area ul li {
+  list-style: none;
+}
+
+.social-area {
+  position: absolute;
+  left: 5px;
+  bottom: 20px;
+}
+
+.social-area ul {
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+.social-area ul li a {
+  color: var(--base-color);
+}
+.img-centre {
+  width: 485px;
+  margin: 0px auto;
+  display: block;
+}
+
+.details {
+  margin-left: 50%;
+}
+
+.details ul {
   text-align: center;
+  list-style: none;
+  padding-left: 0px;
+  display: inline-flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.details ul li {
+  background: beige;
+  color: black;
+  margin-right: 20px;
+  border-radius: 10px;
+  padding: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.details h5 {
+  margin-bottom: 0px;
+  font-size: 25px;
+}
+
+.details {
+  position: absolute;
+  bottom: 100px;
+  right: 200px;
+}
+
+.header-navigation {
+  float: right;
+  width: 40%;
+  font-size: 20px;
+}
+
+.header-navigation li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.header-navigation ul {
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    margin-top: 30%;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .main-header,
+  .main-header .subtitle {
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .social-area ul {
+    display: inline-flex;
+  }
+
+  .details {
+    right: initial;
+    margin-left: initial;
+    bottom: 25%;
+    position: relative;
+  }
+
+  .details h5 {
+    text-align: center;
+    margin-top: 25%;
+  }
+  .details ul li {
+    margin: 0px 10px;
+  }
+  .details ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .main-header{
+    margin-top: 30%;
+  }    
+  .social-area{
+    left: initial;
+    left:0px;
+    width:100%;
+  }
+
+  .social-area ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
   }
 }
